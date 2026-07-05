@@ -1,0 +1,27 @@
+{
+  "name": "neuralpaws-remotion-mcp",
+  "version": "1.0.0",
+  "description": "Remotion MCP server for rendering NeuralPaws YouTube Shorts",
+  "type": "module",
+  "scripts": {
+    "dev": "node src/server/index.js",
+    "start": "node src/server/index.js",
+    "studio": "remotion studio src/compositions/index.ts",
+    "render": "remotion render src/compositions/index.ts ReviewShort out/short.mp4"
+  },
+  "dependencies": {
+    "@remotion/cli": "^4.0.0",
+    "@remotion/renderer": "^4.0.0",
+    "@remotion/bundler": "^4.0.0",
+    "remotion": "^4.0.0",
+    "react": "^18.3.0",
+    "react-dom": "^18.3.0",
+    "express": "^4.18.0",
+    "cors": "^2.8.5",
+    "uuid": "^9.0.0"
+  },
+  "devDependencies": {
+    "@types/react": "^18.3.0",
+    "typescript": "^5.4.0"
+  }
+}

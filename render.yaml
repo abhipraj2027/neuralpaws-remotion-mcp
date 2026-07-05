@@ -1,0 +1,13 @@
+services:
+  - type: web
+    name: neuralpaws-remotion-mcp
+    runtime: docker
+    plan: free
+    envVars:
+      - key: PORT
+        value: 3100
+      - key: PUBLIC_URL
+        sync: false
+    healthCheckPath: /health
+    buildCommand: ""
+    startCommand: ""
