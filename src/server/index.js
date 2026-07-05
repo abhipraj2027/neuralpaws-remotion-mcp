@@ -90,7 +90,7 @@ async function renderShort(jobId, props) {
   try {
     jobs.set(jobId, { status: "bundling", progress: 0 });
 
-    const compositionFile = path.join(__dirname, "../compositions/root.ts");
+    const compositionFile = path.join(__dirname, "../compositions/root.tsx");
     const bundled = await bundle({ entryPoint: compositionFile });
 
     jobs.set(jobId, { status: "rendering", progress: 10 });
